@@ -1,7 +1,7 @@
 # luci-app-tcpdump
 
 LuCI interface for tcpdump.\
-It can be usad to capture live TCP traffic for analysis.
+It can be used to capture live TCP traffic for analysis.
 
 ## How to build into firmware:
 
