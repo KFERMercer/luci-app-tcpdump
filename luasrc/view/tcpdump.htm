@@ -171,8 +171,8 @@ modified by KFERMercer <iMercer@yeah.com>: format code.
 			row.insertCell().innerHTML = human_date(entries[i].mtime);
 			row.insertCell().innerHTML = human_size(entries[i].size);
 			var cell = row.insertCell();
-			cell.innerHTML += '<input type="button" onclick="capture_get(\'pcap\', \'' + entries[i].name + '\')" class="cbi-button cbi-button-download" value ="<%:Capture%>" />';
-			cell.innerHTML += '<input type="button" onclick="capture_get(\'filter\', \'' + entries[i].name + '\')" class="cbi-button cbi-button-download" value ="<%:Filter%>" />';
+			cell.innerHTML += '<input type="button" onclick="capture_get(\'pcap\', \'' + entries[i].name + '\')" class="cbi-button cbi-button-download" value ="<%:pcap file%>" />';
+			cell.innerHTML += '<input type="button" onclick="capture_get(\'filter\', \'' + entries[i].name + '\')" class="cbi-button cbi-button-download" value ="<%:filter file%>" />';
 			cell.lastChild.disabled = !entries[i].filter;
 			cell.innerHTML += '<input type="button" onclick="capture_remove(\'' + entries[i].name + '\')" class="cbi-button cbi-button-reset" value ="<%:Remove%>" />';
 		}
